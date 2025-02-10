@@ -1,7 +1,7 @@
 module.exports = {
     theme: {
         extend: {
-            color: {
+            colors: {
                 'p-ruby': '#e0115f',
                 'p-ruby-disable': '#7d0a36',
                 'p-ruby-hover': '#b00e4c',
