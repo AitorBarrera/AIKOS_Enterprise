@@ -1,10 +1,15 @@
 import React from 'react'
+import Logo from '../logo'
 
 function Footer() {
   return (
-    <div>
-        <h1 className='text-p_ruby text-6xl'>AIKO's</h1>
-        <img src='iconos/iakoslogobl.svg' className='w-50'></img>
+    <div className='w-full flex justify-between'>
+      <div className='flex items-center'>
+        <Logo variant="negro" />
+        <div>
+          <p className='mx-4'>Enterprise</p>
+        </div>
+      </div>
     </div>
   )
 }

@@ -1,5 +1,7 @@
 import Footer from "~/componentes/Footer/Footer";
 import type { Route } from "./+types/home";
+import Logo from "~/componentes/logo";
+import DisplayComponente from "~/componentes/displayComponente";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -9,5 +11,12 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
-  return <Footer/>;
+  return (
+    <>
+    <input type="datetime-local"></input>
+      <DisplayComponente nombre="Logo" componente={<Logo/>} descripcion="Logo corporativo"/>
+      <DisplayComponente nombre="Footer" componente={<Footer/>} descripcion="Footer"/>
+      
+    </>
+  );
 }
