@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../logo'
+import Logo from '../Logo'
 
 function Footer() {
   return (
@@ -9,6 +9,22 @@ function Footer() {
         <div>
           <p className='mx-4'>Enterprise</p>
         </div>
+      </div>
+      <div>
+        <p>
+          
+        </p>
+        <a href="">
+        Condiciones de uso
+        </a> 
+        | 
+        <a href="">
+        Cookies
+        </a> 
+        |
+        <a href="">
+        Aviso de privacidad
+        </a>    
       </div>
     </div>
   )

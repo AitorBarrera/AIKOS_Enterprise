@@ -1,7 +1,7 @@
 import Footer from "~/componentes/Footer/Footer";
 import type { Route } from "./+types/home";
-import Logo from "~/componentes/logo";
-import DisplayComponente from "~/componentes/displayComponente";
+import Logo from "~/componentes/Logo";
+import DisplayComponente from "~/componentes/DisplayComponente";
 
 export function meta({}: Route.MetaArgs) {
   return [

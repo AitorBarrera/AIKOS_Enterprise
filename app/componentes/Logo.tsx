@@ -10,7 +10,7 @@ const variants: Record<VariantLogo, string> = {
     };
 
   return (
-    <img src={variants[variant]} alt="logo" className="h-auto max-w-[100%]"/>
+    <img src={variants[variant]} alt="logo" className="h-auto w-[] max-w-[100%]"/>
   )
 }
 
