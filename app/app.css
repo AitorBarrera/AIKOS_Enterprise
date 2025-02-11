@@ -3,12 +3,44 @@
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  --color-p_ruby: #e0115f;
+  --color-p_ruby-disable: #7d0a36;
+  --color-p_ruby-hover: #b00e4c;
+  --color-s_yellow: #ffc700;
+  --color-s_yellow-old: #a67c52;
+  --color-black: #000000;
+  --color-grey: #c4c4c4;
+  --color-white: #ffffff;
+
+  --spacing-icon_collab-rrss: 2.5rem;
+  --spacing-icon_other: 3.125rem;
+  --spacing-icon_logo: 3.75rem;
+
+  --leading-light: 1.5rem;
+  --leading-regular: 1.875rem;
+  --leading-h2: 3rem;
+  --leading-h3: 3rem;
+  --leading-h1: 4.5rem;
+
+  --text-light: 1rem;
+  --text-regular: 1.25rem;
+  --text-h3: 1.625rem;
+  --text-h2: 2.625rem;
+  --text-h1: 4.25rem;
+
+  --font-outfit: Outfit;
+
+  --font-weight-bold: bold;
+  --font-weight-semibold: semibold;
+  --font-weight-light: light;
+  --font-weight-medium: medium;
+  --font-weight-regular: regular;
+
 }
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
-
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
