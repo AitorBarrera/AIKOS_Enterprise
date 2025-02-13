@@ -1,3 +1,12 @@
+# P5.1 Sistema de diseño y componentes React con Tailwind
+> Participantes: Marcos Alarcón Alguacil y Aitor González Barrera 
+> Curso: S2DAW  
+> Módulo: DIW 
+
+## Descripción
+
+
+
 # Welcome to React Router!
 
 A modern, production-ready template for building full-stack React applications using React Router.
