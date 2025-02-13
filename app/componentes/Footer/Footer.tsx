@@ -11,21 +11,21 @@ function Footer() {
         </div>
       </div>
       <div className="flex items-center justify-center col-span-4 md:flex-row">
-        <p className="w-[80%] lg:w-[80%] flex flex-row justify-evenly text-lg font-semibold">
+        <p className="w-[80%] lg:w-[80%] flex flex-col lg:flex-row justify-evenly items-center text-center text-sm lg:text-lg font-semibold gap-4">
           <a
             href=""
             className="relative after:absolute after:left-1/2 after:bottom-[-2px] after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-300 after:translate-x-[-50%] hover:after:w-full"
           >
             Condiciones de uso
           </a>
-          <span>|</span>
+          <span className="hidden lg:block">|</span>
           <a
             href=""
             className="relative after:absolute after:left-1/2 after:bottom-[-2px] after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-300 after:translate-x-[-50%] hover:after:w-full"
           >
             Cookies
           </a>
-          <span>|</span>
+          <span className="hidden lg:block">|</span>
           <a
             href=""
             className="relative after:absolute after:left-1/2 after:bottom-[-2px] after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-300 after:translate-x-[-50%] hover:after:w-full"
