@@ -26,10 +26,10 @@ function Header() {
             onMouseEnter={() => setShowNavbar(true)}
             onMouseLeave={() => setShowNavbar(false)}
           >
-            <ul className="h-full flex">
-              <li className="px-6 flex items-center border-0 border-e-2 border-black h-full hover:bg-grey">About Us</li>
-              <li className="px-6 flex items-center border-0 border-e-2 border-black h-full hover:bg-grey">Contact</li>
-              <li className="px-6 flex items-center border-0 border-e-2 border-black h-full hover:bg-grey">Services</li>
+            <ul className="h-full flex text-black">
+              <a href=""><li className="px-6 flex items-center border-0 border-e-2 border-black h-full hover:bg-grey">About Us</li></a>
+              <a href=""><li className="px-6 flex items-center border-0 border-e-2 border-black h-full hover:bg-grey">Contact</li></a>
+              <a href=""><li className="px-6 flex items-center border-0 border-e-2 border-black h-full hover:bg-grey">Services</li></a>
             </ul>
           </motion.div>
         </div>

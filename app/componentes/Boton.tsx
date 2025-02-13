@@ -5,6 +5,7 @@ interface ButtonProps {
   variant?: variant;
   imagen?: string;
   onClick?: (text: string) => void;
+  ancho?: string;
 }
 
 function Button({
@@ -12,6 +13,7 @@ function Button({
   variant = "ruby",
   onClick = () => console.log("Probando boton"),
   imagen,
+  ancho
 }: ButtonProps) {
   const variants: Record<variant, string> = {
     blanco: "px-2 text-black bg-white hover:bg-grey h-full self-stretch",
@@ -23,7 +25,7 @@ function Button({
 
   return (
     <button
-      className={`self-center font-bold py-2  rounded hover:cursor-pointer ${variants[variant]} flex items-center justify-center`}
+      className={`self-center font-bold py-2 rounded hover:cursor-pointer ${variants[variant]} flex items-center justify-center w-[${ancho}]`}
       onClick={() => onClick(text || "")}
     >
       {imagen && <img src={imagen} alt={text} className="w-8 h-8" />}
