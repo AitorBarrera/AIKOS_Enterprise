@@ -14,19 +14,19 @@ function Button({
   imagen,
 }: ButtonProps) {
   const variants: Record<variant, string> = {
-    blanco: "text-black bg-white hover:bg-grey",
-    blanco2: "text-p_ruby bg-white hover:bg-p_ruby-hover hover:text-white",
-    negro: "text-white bg-black hover:bg-stone-900",
-    ruby: "text-white bg-p_ruby hover:bg-p_ruby-hover",
-    aikos: "text-black bg-white hover:text-white hover:bg-black",
+    blanco: "px-2 text-black bg-white hover:bg-grey h-full self-stretch",
+    blanco2: "px-12 text-p_ruby bg-white hover:bg-p_ruby-hover hover:text-white",
+    negro: "px-4 text-white bg-black hover:bg-stone-900",
+    ruby: "px-4 text-white bg-p_ruby hover:bg-p_ruby-hover",
+    aikos: "px-6 text-2xl text-black bg-white hover:text-white hover:bg-black",
   };
 
   return (
     <button
-      className={`font-bold py-2 px-4 rounded hover:cursor-pointer ${variants[variant]} flex items-center justify-center`}
+      className={`self-center font-bold py-2  rounded hover:cursor-pointer ${variants[variant]} flex items-center justify-center`}
       onClick={() => onClick(text || "")}
     >
-      {imagen && <img src={imagen} alt={text} className="w-6 h-6" />}
+      {imagen && <img src={imagen} alt={text} className="w-8 h-8" />}
       {text}
     </button>
   );

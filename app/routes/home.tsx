@@ -1,9 +1,10 @@
-import Footer from "~/componentes/Footer/Footer";
+import Footer from "~/componentes/Footer";
 import type { Route } from "./+types/home";
 import Logo from "~/componentes/Logo";
 import DisplayComponente from "~/componentes/DisplayComponente";
 import Boton from "~/componentes/Boton";
 import "@fontsource/outfit";
+import Header from "~/componentes/Header";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -45,6 +46,12 @@ export default function Home() {
         ]}
         descripcion="Boton"
       />
+
+      <DisplayComponente
+        key={5}
+        nombre="Header"
+        componentes={[<Header/>]}
+        />
     </>
   );
 }

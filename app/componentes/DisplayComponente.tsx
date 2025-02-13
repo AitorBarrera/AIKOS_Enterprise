@@ -19,7 +19,7 @@ function DisplayComponente({
           <h2 className="mt-16 mb-8 text-4xl font-bold text-center">
             {nombre}
           </h2>
-          <div className="border-2 rounded-lg shadow-lg w-[100%] p-16 max-h-100 flex justify-center gap-8">
+          <div className="border-2 bg-gray-600 rounded-lg shadow-lg w-[100%] p-16 max-h-100 flex justify-center gap-8">
             {componentes.map((componente, index) => (
               <div key={index} className="flex justify-center w-full">
                 {componente}
