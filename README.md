@@ -5,7 +5,25 @@
 
 ## Descripción
 
+-En esta práctica, los alumnos en grupo deberán transformar los wireframes diseñados en una en la práctica 4.1r en un sistema de diseño bien estructurado en Figma. Luego, deberán exportar los estilos a un proyecto en React con TypeScript, utilizando Tailwind CSS para la estilización.
 
+### Definir el Sistema de Diseño en Figma
+#### Elección de las fuentes y tipografías
+- Hemos elegido la fuente Outfit de Google Fonts, una tipografía sans-serif que destaca por su excelente legibilidad en distintos tamaños. Además, aporta un toque elegante y estético que armoniza perfectamente con el estilo y la paleta de colores de la página.
+#### Elección de paleta de colores
+- Inicialmente, los tonos de la página iban a ser rosa cerezo, pero finalmente nos decantamos por el rojo rubí, ya que aporta un toque más personal. Combinado con el dorado como color secundario, ambos tonos se integran de manera armoniosa, logrando una estética sofisticada y equilibrada.
+#### Definir los componentes básicos
+Hemos definido varios componentes en Figma para su implementación y traducción a React con TypeScript, asegurando coherencia y eficiencia en el desarrollo:
+  - Navbar
+  - Diferentes botones
+  - Acordeón
+  - Formulario
+  - Cards
+
+## Enlace de interes
+
+[Figma] (https://www.figma.com/design/srUQoB3xW4sDIrtRejIMZ1/AIKO'S-ENTERPRISE-Compartido?node-id=0-1&t=cTlVJS7FUt53NKqT-1)
+[PáginaDesplegada] ()
 
 # Welcome to React Router!
 
