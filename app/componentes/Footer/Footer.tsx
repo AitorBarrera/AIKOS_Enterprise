@@ -1,37 +1,52 @@
-import React from 'react'
-import Logo from '../Logo'
+import React from "react";
+import Logo from "../Logo";
 
 function Footer() {
   return (
-    <div className='w-full py-4 px-4 flex flex-col lg:grid lg:grid-cols-6 gap-8 bg-white text-black'>
-      <div className='flex justify-center lg:justify-start items-center col-span-1'>
-        <Logo variant="negro" width="5rem"/>
+    <div className="flex flex-col w-full gap-8 px-4 py-4 text-black bg-white lg:grid lg:grid-cols-6">
+      <div className="flex items-center justify-center col-span-1 lg:justify-start">
+        <Logo variant="negro" width="3rem" />
         <div>
-          <p className='mx-1'>Enterprise</p>
+          <p className="mx-1">Enterprise</p>
         </div>
       </div>
-      <div className='col-span-4 flex md:flex-row justify-center items-center'>
-        <p className='w-[80%] lg:w-[80%] flex-row flex justify-evenly text-sm'>
-          <a href="">
-          Condiciones de uso 
+      <div className="flex items-center justify-center col-span-4 md:flex-row">
+        <p className="w-[80%] lg:w-[80%] flex flex-row justify-evenly text-lg font-semibold">
+          <a
+            href=""
+            className="relative after:absolute after:left-1/2 after:bottom-[-2px] after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-300 after:translate-x-[-50%] hover:after:w-full"
+          >
+            Condiciones de uso
           </a>
-          |
-          <a href="">
-          Cookies 
-          </a> 
-          |
-          <a href="">
-          Aviso de privacidad 
-          </a> 
-        </p>   
+          <span>|</span>
+          <a
+            href=""
+            className="relative after:absolute after:left-1/2 after:bottom-[-2px] after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-300 after:translate-x-[-50%] hover:after:w-full"
+          >
+            Cookies
+          </a>
+          <span>|</span>
+          <a
+            href=""
+            className="relative after:absolute after:left-1/2 after:bottom-[-2px] after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-300 after:translate-x-[-50%] hover:after:w-full"
+          >
+            Aviso de privacidad
+          </a>
+        </p>
       </div>
-      <div className='col-span-1 flex w-full justify-center lg:justify-end'>
-        <a href="" className='flex align-middle ms-6'><img src="iconos\RRSS\x.svg" alt="" className='w-4'/></a>
-        <a href="" className='flex align-middle ms-6'><img src="iconos\RRSS\youtube.svg" alt="" className='w-4'/></a>
-        <a href="" className='flex align-middle ms-6'><img src="iconos\RRSS\instagram.svg" alt="" className='w-4'/></a>   
+      <div className="flex justify-center w-full col-span-1 gap-10 lg:justify-end">
+        <a href="" className="flex align-middle">
+          <img src="iconos/RRSS/x.svg" alt="" className="w-8" />
+        </a>
+        <a href="" className="flex align-middle">
+          <img src="iconos/RRSS/youtube.svg" alt="" className="w-8" />
+        </a>
+        <a href="" className="flex align-middle">
+          <img src="iconos/RRSS/instagram.svg" alt="" className="w-8" />
+        </a>
       </div>
     </div>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

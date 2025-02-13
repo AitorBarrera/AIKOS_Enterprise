@@ -3,6 +3,7 @@ import type { Route } from "./+types/home";
 import Logo from "~/componentes/Logo";
 import DisplayComponente from "~/componentes/DisplayComponente";
 import Boton from "~/componentes/Boton";
+import "@fontsource/outfit";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -14,32 +15,36 @@ export function meta({}: Route.MetaArgs) {
 export default function Home() {
   return (
     <>
-    <h2 className="text-center text-5xl mt-16 font-extrabold">COMPONENTES</h2>
-      <DisplayComponente 
-        nombre="Logo" 
+      <h2 className="mt-16 text-5xl font-extrabold text-center">COMPONENTES</h2>
+      <DisplayComponente
+        key={1}
+        nombre="Logo"
         componentes={[
-          <Logo variant="negro" width="40%"/>,
-          <Logo variant="ruby" width="40%"/>
-        ]} 
+          <Logo variant="negro" width="40%" />,
+          <Logo variant="ruby" width="40%" />,
+        ]}
         descripcion="Logo corporativo"
       />
 
-      <DisplayComponente 
-        nombre="Footer" 
-        componentes={[<Footer/>]} 
+      <DisplayComponente
+        key={2}
+        nombre="Footer"
+        componentes={[<Footer />]}
         descripcion="Footer"
       />
 
-      <DisplayComponente 
-        nombre="Boton" 
+      <DisplayComponente
+        key={3}
+        nombre="Boton"
         componentes={[
-          <Boton key={1} variant="negro"/>, 
-          <Boton key={2} variant="blanco"/>,
-          <Boton key={3} variant="ruby"/>
-        ]} 
+          <Boton key={1} variant="aikos" text="aiko's" />,
+          <Boton key={2} variant="blanco" imagen="iconos/bars-solid.svg" />,
+          <Boton key={3} variant="ruby" text="boton" />,
+          <Boton key={4} variant="blanco2" text="Enviar" />,
+          <Boton key={5} variant="negro" text="boton" />,
+        ]}
         descripcion="Boton"
       />
-      
     </>
   );
 }
