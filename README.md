@@ -23,7 +23,7 @@ Hemos definido varios componentes en Figma para su implementación y traducción
 ### Exportar el Sistema de Diseño a Tailwind CSS
 - Primero hemos creado las diferentes variables en figma y luego gracias al plugin "variables2css" exportamos las variable en formato css, para luego añadirlo en nuestro tailwind.config.js.
 
-![figma](readmeIMG/1.png)   ![vscode](readmeIMG/2.png)
+![figma](public/readmeIMG/1.png)   ![vscode](public/readmeIMG/2.png)
 
 ## Enlace de interes
 
