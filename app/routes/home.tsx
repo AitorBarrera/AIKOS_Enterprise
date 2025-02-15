@@ -59,19 +59,19 @@ export default function Home() {
         componentes={[<Header/>]}
         />
 
-      <DisplayComponente
-        key={6}
-        nombre="InputDatetime"
-        componentes={[
-          <InputDateTime/>
-      ]}
-        />
+        <DisplayComponente
+          key={6}
+          nombre="Input"
+          componentes={[
+            <Input type={"text"} placeholder="Nombre *" />
+        ]}
+          />
 
       <DisplayComponente
         key={7}
-        nombre="Input"
+        nombre="InputDatetime"
         componentes={[
-          <Input type={"text"} placeholder="Nombre *" />
+          <InputDateTime/>
       ]}
         />
 

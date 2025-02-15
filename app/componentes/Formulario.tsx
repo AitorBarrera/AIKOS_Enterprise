@@ -10,8 +10,8 @@ function Formulario() {
         <div className="flex flex-col items-center gap-8">
             <InputDateTime/>
             <Input type="text" placeholder="Nombre *"/>
-            <Input type="text" placeholder="Apellidos *"/>
-            <Input type="text" placeholder="Direccion *"/>
+            <Input type="text" placeholder="Apellidos *" isDisabled={true}/>
+            <Input type="text" placeholder="Direccion *" hasError={true} errorMessage="Error: Necesita al menos 10 caracteres." />
             <Textarea rows={8} placeholder="¿En qué podemos ayudar?"/>
             <Boton text="Enviar" variant="blanco2" ancho="40%"/>
         </div>

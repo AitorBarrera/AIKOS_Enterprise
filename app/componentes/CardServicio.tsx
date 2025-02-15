@@ -8,7 +8,7 @@ interface CardServicioProps {
     servicios: string[],
 }
 
-function CardServicio({ key, titulo, descripcion, servicios}: CardServicioProps) {
+function CardServicio({ titulo, descripcion, servicios}: CardServicioProps) {
   const [showCard, setShowCard] = useState(false);
 
   return (

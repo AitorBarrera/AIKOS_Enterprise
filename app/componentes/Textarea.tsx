@@ -28,8 +28,8 @@ function Textarea({
         className={`border py-2 px-4 rounded placeholder-grey focus:outline-none focus:ring-2 shadow-inner
           ${
             hasError
-              ? "border-red-500 focus:ring-red-300"
-              : "border-p_ruby-hover focus:ring-s_yellow-old"
+            ? "border-white focus:ring-gray-500"
+            : "border-p_ruby-hover focus:ring-s_yellow"
           }
           ${isDisabled ? "bg-gray-200" : "bg-p_ruby-disable"} 
           `}
@@ -42,7 +42,7 @@ function Textarea({
         }}
         disabled={isDisabled}
       />
-      {hasError && <p className="text-red-500 text-xs">{errorMessage}</p>}
+      {hasError && <p className="text-white text-xs">{errorMessage}</p>}
     </div>
   );
 }
