@@ -15,6 +15,7 @@
     - [3. Implementar los Componentes en React con TypeScript](#3-implementar-los-componentes-en-react-con-typescript)
     - [Estructura del contenido](#estructura-del-contenido)
       - [1. Carpeta routes](#1-carpeta-routes)
+      - [2. Carpeta componentes](#2-carpeta-componentes)
   - [Enlaces de interés](#enlaces-de-interés)
 
 
@@ -105,10 +106,10 @@ En Figma, hemos diseñado varios componentes esenciales para la implementación 
 
           ![alt text](public/readmeIMG/variantesComponentes/variantesInputIMG.png)
 
-           1. Disabled:
+           1. **Disabled**:
             ![alt text](public/readmeIMG/variantesComponentes/varianteInputDisabledIMG.png)
 
-           2. Error:
+           2. **Error**:
             ![alt text](public/readmeIMG/variantesComponentes/varianteInputErrorIMG.png)      
   
   6. ### InputDatetime
@@ -142,7 +143,7 @@ En Figma, hemos diseñado varios componentes esenciales para la implementación 
       Cuando es abierto:
       ![alt text](public/readmeIMG/componentes/CardServicioClickedIMG.png)
 
-      - ****Tailwind****:
+      - **Tailwind**:
 
         ![alt text](public/readmeIMG/tailwindComponentes/twCardServicioIMG.png)
 
@@ -152,8 +153,24 @@ En Figma, hemos diseñado varios componentes esenciales para la implementación 
 
   ### Estructura del contenido
    #### 1. Carpeta routes
-   Donde se desplegará las diferentes vistas de la pagina (home, sobre nosotros, contacto, servicios)
+   
+   Donde se desplegará las diferentes vistas de la pagina (home, sobre nosotros, contacto, servicios).
 
+  ![alt text](public\readmeIMG\estructuraCodigo\routesIMG.png)
+
+   #### 2. Carpeta componentes
+   
+   Donde esta definidos todos los componentes, algunos de ellos son componentes genericos como el input y el boton con los props apropiados
+   
+  ![alt text](public\readmeIMG\estructuraCodigo\componentesIMG.png)
+
+  - Input:
+   
+    ![alt text](public\readmeIMG\estructuraCodigo\inputIMG.png)
+
+  - Boton:
+   
+    ![alt text](public\readmeIMG\estructuraCodigo\botonIMG.png)
 ---
 
 ## Enlaces de interés
