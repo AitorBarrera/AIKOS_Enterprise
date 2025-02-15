@@ -157,27 +157,27 @@ En Figma, hemos diseñado varios componentes esenciales para la implementación 
    
    Donde se desplegará las diferentes vistas de la pagina (home, sobre nosotros, contacto, servicios).
 
-  ![alt text](public\readmeIMG\estructuraCodigo\routesIMG.png)
+  ![alt text](public/readmeIMG/estructuraCodigo/routesIMG.png)
 
    #### 2. Carpeta componentes
    
    Donde esta definidos todos los componentes, algunos de ellos son componentes genericos como el input y el boton con los props apropiados
    
-  ![alt text](public\readmeIMG\estructuraCodigo\componentesIMG.png)
+  ![alt text](public/readmeIMG/estructuraCodigo/componentesIMG.png)
 
   - Input:
    
-    ![alt text](public\readmeIMG\estructuraCodigo\inputIMG.png)
+    ![alt text](public/readmeIMG/estructuraCodigo/inputIMG.png)
 
   - Boton:
    
-    ![alt text](public\readmeIMG\estructuraCodigo\botonIMG.png)
+    ![alt text](public/readmeIMG/estructuraCodigo/botonIMG.png)
 
    #### 3. Carpeta public
    
    Contiene todas las imagenes que se utilizan para la pagina y el readme.
    
-  ![alt text](public\readmeIMG\estructuraCodigo\publicIMG.png)
+  ![alt text](public/readmeIMG/estructuraCodigo/publicIMG.png)
 
 ---
 
