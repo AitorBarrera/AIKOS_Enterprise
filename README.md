@@ -16,6 +16,7 @@
     - [Estructura del contenido](#estructura-del-contenido)
       - [1. Carpeta routes](#1-carpeta-routes)
       - [2. Carpeta componentes](#2-carpeta-componentes)
+      - [3. Carpeta public](#3-carpeta-public)
   - [Enlaces de interés](#enlaces-de-interés)
 
 
@@ -171,6 +172,13 @@ En Figma, hemos diseñado varios componentes esenciales para la implementación 
   - Boton:
    
     ![alt text](public\readmeIMG\estructuraCodigo\botonIMG.png)
+
+   #### 3. Carpeta public
+   
+   Contiene todas las imagenes que se utilizan para la pagina y el readme.
+   
+  ![alt text](public\readmeIMG\estructuraCodigo\publicIMG.png)
+
 ---
 
 ## Enlaces de interés
