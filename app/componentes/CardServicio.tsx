@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 interface CardServicioProps {
-  key: number;
   titulo: string;
   descripcion: string;
   servicios: string[];
@@ -14,14 +13,14 @@ function CardServicio({ titulo, descripcion, servicios }: CardServicioProps) {
   return (
     <div className="flex flex-col w-full">
       <div
-        className={`text-white  w-full py-6 px-12 flex justify-between items-center transition-all duration-300 ease-in-out
+        className={`text-white w-full py-6 px-12 flex justify-between items-center transition-all duration-300 ease-in-out
             ${showCard ? "bg-p_ruby-hover" : "bg-p_ruby"}
             `}
       >
         <h2 className="text-5xl font-bold">{titulo}</h2>
         <div
-          className="w-12 text-white cursor-pointer "
-          onClick={() => (showCard ? setShowCard(false) : setShowCard(true))}
+          className="w-12 text-white cursor-pointer"
+          onClick={() => setShowCard(!showCard)}
         >
           <img
             src="iconos/plusb-solid.svg"
@@ -33,29 +32,28 @@ function CardServicio({ titulo, descripcion, servicios }: CardServicioProps) {
         </div>
       </div>
 
-      <div
-        className={`
-            bg-p_ruby-hover w-full shadow-lg px-12 transition-[height] duration-300 ease-out overflow-hidden 
-            ${showCard ? "h-[100%] opacity-100" : "h-0"}
-        `}
+      <motion.div
+        initial={{ height: 0, opacity: 0 }}
+        animate={{ height: showCard ? "auto" : 0, opacity: showCard ? 1 : 0 }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
+        className="w-full px-12 overflow-hidden shadow-lg bg-p_ruby-hover"
       >
-        <div
-          className={`text-white w-full grid grid-cols-4 py-8
-            `}
-        >
+        <div className="grid w-full grid-cols-4 py-8 text-white">
           <p className="flex flex-col justify-center col-span-2">
             {descripcion}
           </p>
           <ul className="flex flex-col justify-center col-span-1 col-start-4 gap-1">
-            {servicios.map((servicio) => (
-              <li className="text-end">{servicio}</li>
+            {servicios.map((servicio, index) => (
+              <li key={index} className="text-end">
+                {servicio}
+              </li>
             ))}
           </ul>
           <a href="" className="my-4 text-s_yellow">
             Know more...
           </a>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

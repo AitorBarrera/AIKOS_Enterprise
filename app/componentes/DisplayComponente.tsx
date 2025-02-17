@@ -6,7 +6,7 @@ interface DisplayComponenteProps {
   componentes: JSX.Element[];
   descripcion?: string;
   flexDireccion?: "row" | "col";
-  gap?:number;
+  gap?: number;
 }
 
 function DisplayComponente({
@@ -14,7 +14,7 @@ function DisplayComponente({
   componentes,
   descripcion,
   flexDireccion = "row",
-  gap = 8
+  gap = 8,
 }: DisplayComponenteProps) {
   return (
     <div className="w-[80%] mx-auto">
@@ -23,7 +23,9 @@ function DisplayComponente({
           <h2 className="mt-16 mb-8 text-4xl font-bold text-center">
             {nombre}
           </h2>
-          <div className={`border-2 bg-gray-600 rounded-lg shadow-lg w-[100%] p-16 flex justify-around gap-${gap} flex-${flexDireccion}`}>
+          <div
+            className={`border-2 bg-gray-600 rounded-lg shadow-lg w-[100%] p-16 flex justify-around gap-${gap} flex-${flexDireccion}`}
+          >
             {componentes.map((componente, index) => (
               <div key={index} className="flex justify-center w-full">
                 {componente}

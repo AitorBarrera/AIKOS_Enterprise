@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 
 function InputDateTime() {
   return (
-    <div className='flex justify-between w-full bg-p_ruby p-2 rounded-2xl'>
-        <input type="date" />
-        <input type="time" />
+    <div className="flex justify-between w-full p-2 bg-p_ruby rounded-2xl">
+      <input type="date" />
+      <input type="time" />
     </div>
-  )
+  );
 }
 
-export default InputDateTime
+export default InputDateTime;

@@ -13,7 +13,7 @@ interface InputProps {
 function Input({
   placeholder = "",
   initialValue = "",
-  onChange = () => console.log(''),
+  onChange = () => console.log(""),
   type,
   isDisabled = false,
   hasError = false,
@@ -30,19 +30,23 @@ function Input({
               ? "border-white focus:ring-gray-500"
               : "border-p_ruby-hover focus:ring-s_yellow"
           }
-          ${isDisabled ? "bg-gray-800 placeholder-gray-600" : "bg-p_ruby-disable placeholder-grey "} 
+          ${
+            isDisabled
+              ? "bg-gray-800 placeholder-gray-600"
+              : "bg-p_ruby-disable placeholder-grey "
+          } 
           `}
         type={type}
         placeholder={placeholder}
         value={value}
         onChange={(event) => {
-            console.log(event.target.value);
-            setValue(event.target.value);
-            onChange(event.target.value);
+          console.log(event.target.value);
+          setValue(event.target.value);
+          onChange(event.target.value);
         }}
         disabled={isDisabled}
       />
-      {hasError && <p className="text-white text-xs">{errorMessage}</p>}
+      {hasError && <p className="text-xs text-white">{errorMessage}</p>}
     </div>
   );
 }

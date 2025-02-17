@@ -37,7 +37,7 @@ function Footer() {
           </a>
         </p>
       </div>
-      <div className="flex justify-center w-full col-span-1 gap-8  lg:justify-end">
+      <div className="flex justify-center w-full col-span-1 gap-8 lg:justify-end">
         <a href="" className="flex align-middle">
           <img src="iconos/RRSS/x.svg" alt="" className="w-8" />
         </a>

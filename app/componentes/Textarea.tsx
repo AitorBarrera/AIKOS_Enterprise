@@ -14,7 +14,7 @@ function Textarea({
   rows = 10,
   placeholder = "",
   initialValue = "",
-  onChange = () => console.log(''),
+  onChange = () => console.log(""),
   isDisabled = false,
   hasError = false,
   errorMessage = "Error en el input",
@@ -28,21 +28,21 @@ function Textarea({
         className={`border py-2 px-4 rounded placeholder-grey focus:outline-none focus:ring-2 shadow-inner
           ${
             hasError
-            ? "border-white focus:ring-gray-500"
-            : "border-p_ruby-hover focus:ring-s_yellow"
+              ? "border-white focus:ring-gray-500"
+              : "border-p_ruby-hover focus:ring-s_yellow"
           }
           ${isDisabled ? "bg-gray-200" : "bg-p_ruby-disable"} 
           `}
         placeholder={placeholder}
         value={value}
         onChange={(event) => {
-            console.log(event.target.value);
-            setValue(event.target.value);
-            onChange(event.target.value);
+          console.log(event.target.value);
+          setValue(event.target.value);
+          onChange(event.target.value);
         }}
         disabled={isDisabled}
       />
-      {hasError && <p className="text-white text-xs">{errorMessage}</p>}
+      {hasError && <p className="text-xs text-white">{errorMessage}</p>}
     </div>
   );
 }
