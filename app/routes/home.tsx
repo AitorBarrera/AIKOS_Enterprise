@@ -110,19 +110,19 @@ export default function Home() {
             key={1} 
             titulo="Servicio 1" 
             descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis faucibus leo odio, lobortis sagittis enim bibendum vel. In ac vehicula nunc. Nullam tincidunt nec lacus vitae porttitor. Maecenas eu vulputate purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam dignissim sagittis accumsan. Curabitur facilisis turpis non fermentum posuere." 
-            servicios={["Porros", "Cocaina", "LSD", "LSD", "LSD", "LSD"]}
+            servicios={["Servicio 1", "Servicio 2", "Servicio 3"]}
           />,
           <CardServicio
             key={2} 
             titulo="Servicio 2" 
             descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis faucibus leo odio, lobortis sagittis enim bibendum vel. In ac vehicula nunc. Nullam tincidunt nec lacus vitae porttitor. Maecenas eu vulputate purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam dignissim sagittis accumsan. Curabitur facilisis turpis non fermentum posuere." 
-            servicios={["Porros", "Cocaina", "LSD", "LSD", "LSD", "LSD"]}
+            servicios={["Servicio 1", "Servicio 2", "Servicio 3"]}
           />,
           <CardServicio
             key={3} 
             titulo="Servicio 3" 
             descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis faucibus leo odio, lobortis sagittis enim bibendum vel. In ac vehicula nunc. Nullam tincidunt nec lacus vitae porttitor. Maecenas eu vulputate purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam dignissim sagittis accumsan. Curabitur facilisis turpis non fermentum posuere." 
-            servicios={["Porros", "Cocaina", "LSD", "LSD", "LSD", "LSD"]}
+            servicios={["Servicio 1", "Servicio 2", "Servicio 3"]}
           />
         ]}
       />
