@@ -115,7 +115,7 @@ const ErrorBoundary = withErrorBoundaryProps(function ErrorBoundary2({
     details = error.status === 404 ? "The requested page could not be found." : error.statusText || details;
   }
   return /* @__PURE__ */ jsxs("main", {
-    className: "pt-16 p-4 container mx-auto",
+    className: "container p-4 pt-16 mx-auto",
     children: [/* @__PURE__ */ jsx("h1", {
       children: message
     }), /* @__PURE__ */ jsx("p", {
@@ -179,7 +179,7 @@ function Footer() {
         }
       )
     ] }) }),
-    /* @__PURE__ */ jsxs("div", { className: "flex justify-center w-full col-span-1 gap-8  lg:justify-end", children: [
+    /* @__PURE__ */ jsxs("div", { className: "flex justify-center w-full col-span-1 gap-8 lg:justify-end", children: [
       /* @__PURE__ */ jsx("a", { href: "", className: "flex align-middle", children: /* @__PURE__ */ jsx("img", { src: "iconos/RRSS/x.svg", alt: "", className: "w-8" }) }),
       /* @__PURE__ */ jsx("a", { href: "", className: "flex align-middle", children: /* @__PURE__ */ jsx("img", { src: "iconos/RRSS/youtube.svg", alt: "", className: "w-8" }) }),
       /* @__PURE__ */ jsx("a", { href: "", className: "flex align-middle", children: /* @__PURE__ */ jsx("img", { src: "iconos/RRSS/instagram.svg", alt: "", className: "w-8" }) })
@@ -195,7 +195,13 @@ function DisplayComponente({
 }) {
   return /* @__PURE__ */ jsx("div", { className: "w-[80%] mx-auto", children: /* @__PURE__ */ jsx("div", { className: "flex", children: /* @__PURE__ */ jsxs("div", { className: "container ", children: [
     /* @__PURE__ */ jsx("h2", { className: "mt-16 mb-8 text-4xl font-bold text-center", children: nombre }),
-    /* @__PURE__ */ jsx("div", { className: `border-2 bg-gray-600 rounded-lg shadow-lg w-[100%] p-16 flex justify-around gap-${gap} flex-${flexDireccion}`, children: componentes.map((componente, index) => /* @__PURE__ */ jsx("div", { className: "flex justify-center w-full", children: componente }, index)) })
+    /* @__PURE__ */ jsx(
+      "div",
+      {
+        className: `border-2 bg-gray-600 rounded-lg shadow-lg w-[100%] p-16 flex justify-around gap-${gap} flex-${flexDireccion}`,
+        children: componentes.map((componente, index) => /* @__PURE__ */ jsx("div", { className: "flex justify-center w-full", children: componente }, index))
+      }
+    )
   ] }) }) });
 }
 function Button({
@@ -240,16 +246,16 @@ function Header() {
     /* @__PURE__ */ jsx(
       motion.div,
       {
-        className: " bg-white shadow-lg rounded ms-2",
+        className: "bg-white rounded shadow-lg ms-2",
         initial: { opacity: 0, x: -10 },
         animate: { opacity: showNavbar ? 1 : 0, x: showNavbar ? 0 : -10 },
         transition: { duration: 0.2 },
         onMouseEnter: () => setShowNavbar(true),
         onMouseLeave: () => setShowNavbar(false),
-        children: /* @__PURE__ */ jsxs("ul", { className: "h-full flex text-black", children: [
-          /* @__PURE__ */ jsx("a", { href: "", children: /* @__PURE__ */ jsx("li", { className: "px-6 flex items-center border-0 border-e-2 border-black h-full hover:bg-grey", children: "About Us" }) }),
-          /* @__PURE__ */ jsx("a", { href: "", children: /* @__PURE__ */ jsx("li", { className: "px-6 flex items-center border-0 border-e-2 border-black h-full hover:bg-grey", children: "Contact" }) }),
-          /* @__PURE__ */ jsx("a", { href: "", children: /* @__PURE__ */ jsx("li", { className: "px-6 flex items-center border-0 border-e-2 border-black h-full hover:bg-grey", children: "Services" }) })
+        children: /* @__PURE__ */ jsxs("ul", { className: "flex h-full text-black", children: [
+          /* @__PURE__ */ jsx("a", { href: "", children: /* @__PURE__ */ jsx("li", { className: "flex items-center h-full px-6 border-0 border-black border-e-2 hover:bg-grey", children: "About Us" }) }),
+          /* @__PURE__ */ jsx("a", { href: "", children: /* @__PURE__ */ jsx("li", { className: "flex items-center h-full px-6 border-0 border-black border-e-2 hover:bg-grey", children: "Contact" }) }),
+          /* @__PURE__ */ jsx("a", { href: "", children: /* @__PURE__ */ jsx("li", { className: "flex items-center h-full px-6 border-0 border-black border-e-2 hover:bg-grey", children: "Services" }) })
         ] })
       }
     )
@@ -284,11 +290,11 @@ function Input({
         disabled: isDisabled
       }
     ),
-    hasError && /* @__PURE__ */ jsx("p", { className: "text-white text-xs", children: errorMessage })
+    hasError && /* @__PURE__ */ jsx("p", { className: "text-xs text-white", children: errorMessage })
   ] });
 }
 function InputDateTime() {
-  return /* @__PURE__ */ jsxs("div", { className: "flex justify-between w-full bg-p_ruby p-2 rounded-2xl", children: [
+  return /* @__PURE__ */ jsxs("div", { className: "flex justify-between w-full p-2 bg-p_ruby rounded-2xl", children: [
     /* @__PURE__ */ jsx("input", { type: "date" }),
     /* @__PURE__ */ jsx("input", { type: "time" })
   ] });
@@ -322,24 +328,32 @@ function Textarea({
         disabled: isDisabled
       }
     ),
-    hasError && /* @__PURE__ */ jsx("p", { className: "text-white text-xs", children: errorMessage })
+    hasError && /* @__PURE__ */ jsx("p", { className: "text-xs text-white", children: errorMessage })
   ] });
 }
 function Formulario() {
   return /* @__PURE__ */ jsxs("form", { className: "bg-p_ruby w-[50%] p-8 h-auto", children: [
-    /* @__PURE__ */ jsx("h3", { className: "text-4xl mb-6", children: "Tu información" }),
+    /* @__PURE__ */ jsx("h3", { className: "mb-6 text-4xl", children: "Tu información" }),
     /* @__PURE__ */ jsxs("div", { className: "flex flex-col items-center gap-8", children: [
       /* @__PURE__ */ jsx(InputDateTime, {}),
       /* @__PURE__ */ jsx(Input, { type: "text", placeholder: "Nombre *" }),
       /* @__PURE__ */ jsx(Input, { type: "text", placeholder: "Apellidos *", isDisabled: true }),
-      /* @__PURE__ */ jsx(Input, { type: "text", placeholder: "Direccion *", hasError: true, errorMessage: "Error: Necesita al menos 10 caracteres." }),
+      /* @__PURE__ */ jsx(
+        Input,
+        {
+          type: "text",
+          placeholder: "Direccion *",
+          hasError: true,
+          errorMessage: "Error: Necesita al menos 10 caracteres."
+        }
+      ),
       /* @__PURE__ */ jsx(Textarea, { rows: 8, placeholder: "¿En qué podemos ayudar?" }),
       /* @__PURE__ */ jsx(Button, { text: "Enviar", variant: "blanco2", ancho: "40%" })
     ] })
   ] });
 }
 function CardContacto({ icono, texto }) {
-  return /* @__PURE__ */ jsxs("div", { className: "flex flex-col items-center border-4 bg-white text-black py-4 gap-4", children: [
+  return /* @__PURE__ */ jsxs("div", { className: "flex flex-col items-center gap-4 px-4 py-4 text-black bg-white border-4", children: [
     /* @__PURE__ */ jsx("img", { src: icono, alt: "", className: "w-[12.5%]" }),
     /* @__PURE__ */ jsx("p", { className: "text-3xl", children: texto })
   ] });
@@ -350,7 +364,7 @@ function CardServicio({ titulo, descripcion, servicios }) {
     /* @__PURE__ */ jsxs(
       "div",
       {
-        className: `text-white  w-full py-6 px-12 flex justify-between items-center transition-all duration-300 ease-in-out
+        className: `text-white w-full py-6 px-12 flex justify-between items-center transition-all duration-300 ease-in-out
             ${showCard ? "bg-p_ruby-hover" : "bg-p_ruby"}
             `,
         children: [
@@ -358,8 +372,8 @@ function CardServicio({ titulo, descripcion, servicios }) {
           /* @__PURE__ */ jsx(
             "div",
             {
-              className: "w-12 text-white cursor-pointer ",
-              onClick: () => showCard ? setShowCard(false) : setShowCard(true),
+              className: "w-12 text-white cursor-pointer",
+              onClick: () => setShowCard(!showCard),
               children: /* @__PURE__ */ jsx(
                 "img",
                 {
@@ -376,24 +390,17 @@ function CardServicio({ titulo, descripcion, servicios }) {
       }
     ),
     /* @__PURE__ */ jsx(
-      "div",
+      motion.div,
       {
-        className: `
-            bg-p_ruby-hover w-full shadow-lg px-12 transition-[height] duration-300 ease-out overflow-hidden 
-            ${showCard ? "h-[100%] opacity-100" : "h-0"}
-        `,
-        children: /* @__PURE__ */ jsxs(
-          "div",
-          {
-            className: `text-white w-full grid grid-cols-4 py-8
-            `,
-            children: [
-              /* @__PURE__ */ jsx("p", { className: "flex flex-col justify-center col-span-2", children: descripcion }),
-              /* @__PURE__ */ jsx("ul", { className: "flex flex-col justify-center col-span-1 col-start-4 gap-1", children: servicios.map((servicio) => /* @__PURE__ */ jsx("li", { className: "text-end", children: servicio })) }),
-              /* @__PURE__ */ jsx("a", { href: "", className: "my-4 text-s_yellow", children: "Know more..." })
-            ]
-          }
-        )
+        initial: { height: 0, opacity: 0 },
+        animate: { height: showCard ? "auto" : 0, opacity: showCard ? 1 : 0 },
+        transition: { duration: 0.5, ease: "easeInOut" },
+        className: "w-full px-12 overflow-hidden shadow-lg bg-p_ruby-hover",
+        children: /* @__PURE__ */ jsxs("div", { className: "grid w-full grid-cols-4 py-8 text-white", children: [
+          /* @__PURE__ */ jsx("p", { className: "flex flex-col justify-center col-span-2", children: descripcion }),
+          /* @__PURE__ */ jsx("ul", { className: "flex flex-col justify-center col-span-1 col-start-4 gap-1", children: servicios.map((servicio, index) => /* @__PURE__ */ jsx("li", { className: "text-end", children: servicio }, index)) }),
+          /* @__PURE__ */ jsx("a", { href: "", className: "my-4 text-s_yellow", children: "Know more..." })
+        ] })
       }
     )
   ] });
@@ -499,7 +506,7 @@ const route1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProper
   default: home,
   meta
 }, Symbol.toStringTag, { value: "Module" }));
-const serverManifest = { "entry": { "module": "/assets/entry.client-QGsOKR_y.js", "imports": ["/assets/chunk-IR6S3I6Y-BvsIcvZg.js"], "css": [] }, "routes": { "root": { "id": "root", "parentId": void 0, "path": "", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": true, "module": "/assets/root-tT8ZNiiQ.js", "imports": ["/assets/chunk-IR6S3I6Y-BvsIcvZg.js", "/assets/with-props-DvPqDDfd.js"], "css": ["/assets/root-t5WwLBPf.css"] }, "routes/home": { "id": "routes/home", "parentId": "root", "path": void 0, "index": true, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/home-DbEAYRcB.js", "imports": ["/assets/with-props-DvPqDDfd.js", "/assets/chunk-IR6S3I6Y-BvsIcvZg.js"], "css": ["/assets/home-CTzKUkOS.css"] } }, "url": "/assets/manifest-c07a3e3f.js", "version": "c07a3e3f" };
+const serverManifest = { "entry": { "module": "/assets/entry.client-QGsOKR_y.js", "imports": ["/assets/chunk-IR6S3I6Y-BvsIcvZg.js"], "css": [] }, "routes": { "root": { "id": "root", "parentId": void 0, "path": "", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": true, "module": "/assets/root-EK4dr7vE.js", "imports": ["/assets/chunk-IR6S3I6Y-BvsIcvZg.js", "/assets/with-props-DvPqDDfd.js"], "css": ["/assets/root-DaXnUC8a.css"] }, "routes/home": { "id": "routes/home", "parentId": "root", "path": void 0, "index": true, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/home-akspyF8N.js", "imports": ["/assets/with-props-DvPqDDfd.js", "/assets/chunk-IR6S3I6Y-BvsIcvZg.js"], "css": ["/assets/home-CTzKUkOS.css"] } }, "url": "/assets/manifest-0f1af65c.js", "version": "0f1af65c" };
 const assetsBuildDirectory = "build\\client";
 const basename = "/";
 const future = { "unstable_optimizeDeps": false };
