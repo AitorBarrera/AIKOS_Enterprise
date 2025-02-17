@@ -17,7 +17,7 @@ function DisplayComponente({
   gap = 8,
 }: DisplayComponenteProps) {
   return (
-    <div className="w-[80%] mx-auto">
+    <div className="w-[80%] mx-auto my-8">
       <div className="flex">
         <div className="container ">
           <h2 className="mt-16 mb-8 text-4xl font-bold text-center">
