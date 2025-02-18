@@ -184,4 +184,4 @@ En Figma, hemos diseñado varios componentes esenciales para la implementación 
 ## Enlaces de interés
 
 - [Figma - Sistema de Diseño](https://www.figma.com/design/srUQoB3xW4sDIrtRejIMZ1/AIKO'S-ENTERPRISE-Compartido?node-id=0-1&t=cTlVJS7FUt53NKqT-1)
-- [Página Desplegada]() 
+- [Página Desplegada](https://aikos-enterprise-sigma.vercel.app/) 
