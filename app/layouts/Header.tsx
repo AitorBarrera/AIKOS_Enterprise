@@ -35,17 +35,17 @@ function Header() {
           >
             <ul className="flex flex-col md:flex-row h-full text-black ">
             <Link to={"about"}>
-                <li className="flex items-center h-full px-6 border-black border-b-2 md:border-e-2 hover:bg-grey py-2 md:py-0 text-center">
+                <li className="flex items-center h-full px-6 border-black border-b-2 md:border-b-0 md:border-e-2 hover:bg-grey py-2 md:py-0 text-center">
                   About Us
                 </li>
                 </Link>
               <Link to={"contact"}>
-                <li className="flex items-center h-full px-6 border-black border-b-2 md:border-e-2 hover:bg-grey py-2 md:py-0 text-center">
+                <li className="flex items-center h-full px-6 border-black border-b-2 md:border-b-0 md:border-e-2 hover:bg-grey py-2 md:py-0 text-center">
                   Contact
                 </li>
               </Link>
               <Link to={"services"}>
-                <li className="flex items-center h-full px-6 border-black border-b-2 md:border-e-2 hover:bg-grey py-2 md:py-0 text-center">
+                <li className="flex items-center h-full px-6 border-black border-b-2 md:border-b-0 md:border-e-2 hover:bg-grey py-2 md:py-0 text-center">
                   Services
                 </li>
                 </Link>

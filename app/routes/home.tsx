@@ -10,7 +10,7 @@ import InputDateTime from "~/componentes/InputDateTime";
 import Textarea from "~/componentes/Textarea";
 import Formulario from "~/componentes/Formulario";
 import CardContacto from "~/componentes/CardContacto";
-import CardServicio from "~/componentes/CardServicio";
+import CardServicio from "~/componentes/contenedorCardServicios/CardServicio";
 import Footer from "~/layouts/Footer";
 
 export function meta({}: Route.MetaArgs) {

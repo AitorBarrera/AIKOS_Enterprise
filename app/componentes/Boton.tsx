@@ -11,7 +11,7 @@ interface ButtonProps {
 function Button({
   text,
   variant = "ruby",
-  onClick = () => console.log("Probando boton"),
+  onClick,
   imagen,
   ancho,
 }: ButtonProps) {
@@ -27,7 +27,7 @@ function Button({
   return (
     <button
       className={`self-center font-bold py-2 rounded hover:cursor-pointer ${variants[variant]} flex items-center justify-center w-[${ancho}]`}
-      onClick={() => onClick(text || "")}
+      onClick={() => {}}
     >
       {imagen && <img src={imagen} alt={text} className="w-8 h-8" />}
       {text}
