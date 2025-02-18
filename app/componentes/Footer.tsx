@@ -3,7 +3,7 @@ import Logo from "./Logo";
 
 function Footer() {
   return (
-    <div className="flex flex-col w-full gap-8 px-4 py-4 text-black bg-white lg:grid lg:grid-cols-6">
+    <div className="flex flex-col w-full gap-8 px-4 py-4 text-black bg-white footer lg:grid lg:grid-cols-6">
       <div className="flex items-center justify-center col-span-1 lg:justify-start">
         <Logo variant="negro" width="3rem" />
         <div>

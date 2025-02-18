@@ -13,7 +13,7 @@ function Header() {
           <Boton key={1} variant="aikos" text="aiko's" />
 
           <div
-            className="ms-4"
+            className="ms-2"
             onMouseEnter={() => setShowNavbar(true)}
             onMouseLeave={() => setShowNavbar(false)}
           >

@@ -36,20 +36,20 @@ function CardServicio({ titulo, descripcion, servicios }: CardServicioProps) {
         initial={{ height: 0, opacity: 0 }}
         animate={{ height: showCard ? "auto" : 0, opacity: showCard ? 1 : 0 }}
         transition={{ duration: 0.5, ease: "easeInOut" }}
-        className="w-full px-12 overflow-hidden shadow-lg bg-p_ruby-hover"
+        className="w-full px-4 overflow-hidden shadow-lg md:px-12 bg-p_ruby-hover"
       >
-        <div className="grid w-full grid-cols-4 py-8 text-white">
+        <div className="flex flex-col w-full gap-4 py-8 text-white md:grid md:grid-cols-4 ">
           <p className="flex flex-col justify-center col-span-2">
             {descripcion}
           </p>
           <ul className="flex flex-col justify-center col-span-1 col-start-4 gap-1">
             {servicios.map((servicio, index) => (
-              <li key={index} className="text-end">
+              <li key={index} className="text-center md:text-end">
                 {servicio}
               </li>
             ))}
           </ul>
-          <a href="" className="my-4 text-s_yellow">
+          <a href="" className=" text-s_yellow">
             Know more...
           </a>
         </div>
