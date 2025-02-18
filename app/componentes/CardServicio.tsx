@@ -13,11 +13,11 @@ function CardServicio({ titulo, descripcion, servicios }: CardServicioProps) {
   return (
     <div className="flex flex-col w-full">
       <div
-        className={`text-white w-full py-6 px-12 flex justify-between items-center transition-all duration-300 ease-in-out
+        className={`text-white w-full py-6 lg:px-12 px-4 flex justify-between items-center transition-all duration-300 ease-in-out
             ${showCard ? "bg-p_ruby-hover" : "bg-p_ruby"}
             `}
       >
-        <h2 className="text-5xl font-bold">{titulo}</h2>
+        <h2 className="text-2xl font-bold lg:text-5xl">{titulo}</h2>
         <div
           className="w-12 text-white cursor-pointer"
           onClick={() => setShowCard(!showCard)}
@@ -25,7 +25,7 @@ function CardServicio({ titulo, descripcion, servicios }: CardServicioProps) {
           <img
             src="iconos/plusb-solid.svg"
             alt=""
-            className={`stroke-white stroke-2 transition-all duration-300 ease-in-out
+            className={`stroke-white stroke-2 transition-all duration-300 ease-in-out lg:w-12 lg:h-12 w-full h-8
                     ${showCard ? "rotate-45" : ""}
                     `}
           />

@@ -53,52 +53,48 @@ export default function Home() {
         descripcion="Boton"
       />
 
-      <DisplayComponente
-        key={5}
-        nombre="Header"
-        componentes={[<Header/>]}
-        />
+      <DisplayComponente key={5} nombre="Header" componentes={[<Header />]} />
 
-        <DisplayComponente
-          key={6}
-          nombre="Input"
-          componentes={[
-            <Input type={"text"} placeholder="Nombre *" />
-        ]}
-          />
+      <DisplayComponente
+        key={6}
+        nombre="Input"
+        componentes={[<Input type={"text"} placeholder="Nombre *" />]}
+      />
 
       <DisplayComponente
         key={7}
         nombre="InputDatetime"
-        componentes={[
-          <InputDateTime/>
-      ]}
-        />
+        componentes={[<InputDateTime />]}
+      />
 
       <DisplayComponente
         key={8}
         nombre="Textarea"
         componentes={[
-          <Textarea rows={8} placeholder="¿En qué podemos ayudar?"/>
-      ]}
-        />
+          <Textarea rows={8} placeholder="¿En qué podemos ayudar?" />,
+        ]}
+      />
 
       <DisplayComponente
         key={9}
         nombre="Formulario"
-        componentes={[
-          <Formulario/>
-      ]}
-        />
+        componentes={[<Formulario />]}
+      />
 
       <DisplayComponente
         key={10}
         nombre="Card Contacto"
         componentes={[
-          <CardContacto icono={"iconos/Contacto/phone-volume-solid.svg"} texto="+34 612 345 678"/>,
-          <CardContacto icono={"iconos/Contacto/correo.svg"} texto="correo@correo.es"/>
-      ]}
-        />
+          <CardContacto
+            icono={"iconos/Contacto/phone-volume-solid.svg"}
+            texto="+34 612 345 678"
+          />,
+          <CardContacto
+            icono={"iconos/Contacto/correo.svg"}
+            texto="correo@correo.es"
+          />,
+        ]}
+      />
 
       <DisplayComponente
         key={11}
@@ -107,23 +103,23 @@ export default function Home() {
         gap={0}
         componentes={[
           <CardServicio
-            key={1} 
-            titulo="Servicio 1" 
-            descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis faucibus leo odio, lobortis sagittis enim bibendum vel. In ac vehicula nunc. Nullam tincidunt nec lacus vitae porttitor. Maecenas eu vulputate purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam dignissim sagittis accumsan. Curabitur facilisis turpis non fermentum posuere." 
+            key={1}
+            titulo="Servicio 1"
+            descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis faucibus leo odio, lobortis sagittis enim bibendum vel. In ac vehicula nunc. Nullam tincidunt nec lacus vitae porttitor. Maecenas eu vulputate purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam dignissim sagittis accumsan. Curabitur facilisis turpis non fermentum posuere."
             servicios={["Servicio 1", "Servicio 2", "Servicio 3"]}
           />,
           <CardServicio
-            key={2} 
-            titulo="Servicio 2" 
-            descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis faucibus leo odio, lobortis sagittis enim bibendum vel. In ac vehicula nunc. Nullam tincidunt nec lacus vitae porttitor. Maecenas eu vulputate purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam dignissim sagittis accumsan. Curabitur facilisis turpis non fermentum posuere." 
+            key={2}
+            titulo="Servicio 2"
+            descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis faucibus leo odio, lobortis sagittis enim bibendum vel. In ac vehicula nunc. Nullam tincidunt nec lacus vitae porttitor. Maecenas eu vulputate purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam dignissim sagittis accumsan. Curabitur facilisis turpis non fermentum posuere."
             servicios={["Servicio 1", "Servicio 2", "Servicio 3"]}
           />,
           <CardServicio
-            key={3} 
-            titulo="Servicio 3" 
-            descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis faucibus leo odio, lobortis sagittis enim bibendum vel. In ac vehicula nunc. Nullam tincidunt nec lacus vitae porttitor. Maecenas eu vulputate purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam dignissim sagittis accumsan. Curabitur facilisis turpis non fermentum posuere." 
+            key={3}
+            titulo="Servicio 3"
+            descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis faucibus leo odio, lobortis sagittis enim bibendum vel. In ac vehicula nunc. Nullam tincidunt nec lacus vitae porttitor. Maecenas eu vulputate purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam dignissim sagittis accumsan. Curabitur facilisis turpis non fermentum posuere."
             servicios={["Servicio 1", "Servicio 2", "Servicio 3"]}
-          />
+          />,
         ]}
       />
     </>
