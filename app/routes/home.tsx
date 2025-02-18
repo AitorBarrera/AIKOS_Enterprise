@@ -1,16 +1,17 @@
-import Footer from "~/componentes/Footer";
+
 import type { Route } from "./+types/home";
 import Logo from "~/componentes/Logo";
 import DisplayComponente from "~/componentes/DisplayComponente";
 import Boton from "~/componentes/Boton";
 import "@fontsource/outfit";
-import Header from "~/componentes/Header";
+import Header from "~/layouts/Header";
 import Input from "~/componentes/Input";
 import InputDateTime from "~/componentes/InputDateTime";
 import Textarea from "~/componentes/Textarea";
 import Formulario from "~/componentes/Formulario";
 import CardContacto from "~/componentes/CardContacto";
 import CardServicio from "~/componentes/CardServicio";
+import Footer from "~/layouts/Footer";
 
 export function meta({}: Route.MetaArgs) {
   return [

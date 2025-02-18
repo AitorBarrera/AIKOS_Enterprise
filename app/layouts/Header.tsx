@@ -2,6 +2,7 @@ import React from "react";
 import Boton from "~/componentes/Boton";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router";
 
 function Header() {
   const [showNavbar, setShowNavbar] = useState(false);
@@ -10,8 +11,10 @@ function Header() {
     <header>
       <nav>
         <div className="flex flex-col md:flex-row">
-          <div className="flex"> 
-            <Boton key={1} variant="aikos" text="aiko's" />
+          <div className="flex">
+            <Link to={"/"}>
+              <Boton key={1} variant="aikos" text="aiko's" />
+            </Link>
 
             <div
               className="ms-2"
@@ -31,21 +34,21 @@ function Header() {
             onMouseLeave={() => setShowNavbar(false)}
           >
             <ul className="flex flex-col md:flex-row h-full text-black ">
-              <a href="">
+            <Link to={"about"}>
                 <li className="flex items-center h-full px-6 border-black border-b-2 md:border-e-2 hover:bg-grey py-2 md:py-0 text-center">
                   About Us
                 </li>
-              </a>
-              <a href="">
+                </Link>
+              <Link to={"contact"}>
                 <li className="flex items-center h-full px-6 border-black border-b-2 md:border-e-2 hover:bg-grey py-2 md:py-0 text-center">
                   Contact
                 </li>
-              </a>
-              <a href="">
+              </Link>
+              <Link to={"services"}>
                 <li className="flex items-center h-full px-6 border-black border-b-2 md:border-e-2 hover:bg-grey py-2 md:py-0 text-center">
                   Services
                 </li>
-              </a>
+                </Link>
             </ul>
           </motion.div>
         </div>

@@ -18,7 +18,7 @@ function DisplayComponente({
   return (
     <div className="w-[80%] mx-auto my-8">
       <div className="flex">
-        <div className="container">
+        <div className="container mx-auto">
           <h2 className="mt-16 mb-8 text-4xl font-bold text-center">
             {nombre}
           </h2>
