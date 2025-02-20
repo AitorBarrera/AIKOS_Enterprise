@@ -2,7 +2,7 @@ import React from "react";
 import Boton from "~/componentes/Boton";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-router";
+import { Link, NavLink } from "react-router";
 
 function Header() {
   const [showNavbar, setShowNavbar] = useState(false);
@@ -12,9 +12,11 @@ function Header() {
       <nav>
         <div className="flex flex-col md:flex-row">
           <div className="flex">
-            <Link to={"/"}>
+            <NavLink to={"/"} className={({ isActive, isPending }) =>
+                  isPending ? "" : isActive ? "pointer-events-none" : ""
+                }>
               <Boton key={1} variant="aikos" text="aiko's" />
-            </Link>
+            </NavLink>
 
             <div
               className="ms-2"
@@ -33,22 +35,30 @@ function Header() {
             onMouseEnter={() => setShowNavbar(true)}
             onMouseLeave={() => setShowNavbar(false)}
           >
-            <ul className="flex flex-col md:flex-row h-full text-black ">
-            <Link to={"about"}>
-                <li className="flex items-center h-full px-6 border-black border-b-2 md:border-b-0 md:border-e-2 hover:bg-grey py-2 md:py-0 text-center">
+            <ul className="flex flex-col h-full text-black md:flex-row ">
+                <NavLink to={"about"} className={({ isActive, isPending }) =>
+                  isPending ? "bg-amber-400" : isActive ? "bg-black text-white pointer-events-none" : ""
+                }>
+                <li className="flex items-center h-full px-6 py-2 text-center border-b-2 border-black md:border-b-0 md:border-e-2 hover:bg-grey md:py-0">
                   About Us
                 </li>
-                </Link>
-              <Link to={"contact"}>
-                <li className="flex items-center h-full px-6 border-black border-b-2 md:border-b-0 md:border-e-2 hover:bg-grey py-2 md:py-0 text-center">
+                </NavLink>
+
+              <NavLink to={"contact"} className={({ isActive, isPending }) =>
+                  isPending ? "bg-amber-400" : isActive ? "bg-black text-white pointer-events-none" : ""
+                }>
+                <li className="flex items-center h-full px-6 py-2 text-center border-b-2 border-black md:border-b-0 md:border-e-2 hover:bg-grey md:py-0">
                   Contact
                 </li>
-              </Link>
-              <Link to={"services"}>
-                <li className="flex items-center h-full px-6 border-black border-b-2 md:border-b-0 md:border-e-2 hover:bg-grey py-2 md:py-0 text-center">
+              </NavLink>
+              
+              <NavLink to={"services"} className={({ isActive, isPending }) =>
+                  isPending ? "bg-amber-400" : isActive ? "bg-black text-white pointer-events-none" : ""
+                }>
+                <li className="flex items-center h-full px-6 py-2 text-center border-b-2 border-black md:border-b-0 md:border-e-2 hover:bg-grey md:py-0">
                   Services
                 </li>
-                </Link>
+              </NavLink>
             </ul>
           </motion.div>
         </div>
