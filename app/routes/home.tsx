@@ -12,6 +12,7 @@ import Formulario from "~/componentes/Formulario";
 import CardContacto from "~/componentes/CardContacto";
 import CardServicio from "~/componentes/contenedorCardServicios/CardServicio";
 import Footer from "~/layouts/Footer";
+import ThemeToggle from "~/componentes/ThemeToggle";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -23,7 +24,7 @@ export function meta({}: Route.MetaArgs) {
 export default function Home() {
   return (
     <>
-      <h2 className="mt-16 text-5xl font-extrabold text-center">COMPONENTES</h2>
+      <h2 className="pt-16 text-5xl font-extrabold text-center">COMPONENTES</h2>
       <DisplayComponente
         key={1}
         nombre="Logo"
@@ -37,8 +38,9 @@ export default function Home() {
       <DisplayComponente
         key={2}
         nombre="Footer"
-        componentes={[<Footer />]}
+        componentes={[<Footer />, <Footer footerVariant="transparente"/>]}
         descripcion="Footer"
+        flexDireccion="col"
       />
 
       <DisplayComponente
@@ -91,7 +93,8 @@ export default function Home() {
             texto="+34 612 345 678"
           />,
           <CardContacto
-            icono={"iconos/Contacto/correo.svg"}
+            cardContactoVariant="negro"
+            icono={"iconos/Contacto/correo2.svg"}
             texto="correo@correo.es"
           />,
         ]}
@@ -121,6 +124,14 @@ export default function Home() {
             descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis faucibus leo odio, lobortis sagittis enim bibendum vel. In ac vehicula nunc. Nullam tincidunt nec lacus vitae porttitor. Maecenas eu vulputate purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam dignissim sagittis accumsan. Curabitur facilisis turpis non fermentum posuere."
             servicios={["Servicio 1", "Servicio 2", "Servicio 3"]}
           />,
+        ]}
+      />
+
+      <DisplayComponente
+        key={11}
+        nombre="Toggle Theme"
+        componentes={[
+          <ThemeToggle />
         ]}
       />
     </>

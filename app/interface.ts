@@ -1,1 +1,0 @@
-type VariantLogo = "ruby" | "negro";

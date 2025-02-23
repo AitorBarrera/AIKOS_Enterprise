@@ -5,7 +5,7 @@ import Textarea from "./Textarea";
 
 function Formulario() {
   return (
-    <form className="w-full h-auto p-8 text-white bg-p_ruby">
+    <form className="w-full h-auto p-8 text-white ">
       <h3 className="mb-6 text-4xl">Tu información</h3>
       <div className="flex flex-col items-center gap-8">
         <InputDateTime />

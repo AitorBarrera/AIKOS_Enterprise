@@ -10,8 +10,10 @@
   --color-s_yellow: #ffc700;
   --color-s_yellow-old: #a67c52;
   --color-black: #000000;
+  --color-negro: #000000;
   --color-grey: #c4c4c4;
   --color-white: #ffffff;
+  --color-blanco: #ffffff;
 
   --spacing-icon_collab-rrss: 2.5rem;
   --spacing-icon_other: 3.125rem;
@@ -39,6 +41,8 @@
 
   
 }
+
+@custom-variant dark (&:where(.dark, .dark *));
 
 html,
 body {

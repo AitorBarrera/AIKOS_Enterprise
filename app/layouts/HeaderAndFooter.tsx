@@ -5,18 +5,18 @@ import Footer from './Footer'
 
 function HeaderAndFooter() {
   return (
-    <div className='relative'>
-      <div className='fixed top-26 pl-26'>
+    <div className='relative bg-p_ruby dark:bg-negro'>
+      <header className='fixed top-26 px-8 md:px-26 w-full'>
         <Header/>
-      </div>
+      </header>
 
-      <div className='min-h-screen pb-32'>
+      <main className='min-h-screen pb-32 '>
         <Outlet/>
-      </div>
+      </main>
 
-      <div className='absolute bottom-0 w-full'>
+      <footer className=' w-full'>
         <Footer/>
-      </div>
+      </footer>
     </div>
   )
 }
