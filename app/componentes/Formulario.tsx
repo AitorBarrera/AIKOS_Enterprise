@@ -5,7 +5,7 @@ import Textarea from "./Textarea";
 
 function Formulario() {
   return (
-    <form className="w-full h-auto p-8 text-white ">
+    <form className="w-full h-auto p-8 text-white border-2 border-white rounded-2xl dark:border-grey">
       <h3 className="mb-6 text-4xl">Tu información</h3>
       <div className="flex flex-col items-center gap-8">
         <InputDateTime />

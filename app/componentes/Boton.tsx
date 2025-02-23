@@ -17,7 +17,7 @@ function Button({
 }: ButtonProps) {
   const variants: Record<variant, string> = {
     blanco: "px-2 text-black bg-white hover:bg-grey h-full self-stretch ",
-    blanco2: "px-12 text-p_ruby bg-white hover:bg-p_ruby-hover hover:text-white rounded-2xl",
+    blanco2: "px-12  text-p_ruby dark:text-black bg-white hover:bg-p_ruby-disable dark:hover:bg-p_ruby hover:text-white rounded-2xl",
     negro: "px-4 text-white bg-black hover:bg-stone-900 rounded-xl",
     ruby: "px-4 text-white bg-p_ruby hover:bg-p_ruby-hover rounded-xl",
     aikos: "px-6 text-2xl text-black bg-white hover:text-white hover:bg-black  rounded-xl",

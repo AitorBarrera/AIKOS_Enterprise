@@ -29,9 +29,9 @@ function Textarea({
           ${
             hasError
               ? "border-white focus:ring-gray-500"
-              : "border-p_ruby-hover focus:ring-s_yellow"
+              : "border-p_ruby-hover dark:border-0 focus:ring-s_yellow dark:focus:ring-gray-800"
           }
-          ${isDisabled ? "bg-gray-200" : "bg-p_ruby-disable"} 
+          ${isDisabled ? "bg-gray-200" : "bg-p_ruby-disable dark:border-0 dark:bg-grey dark:placeholder-gray-700"} 
           `}
         placeholder={placeholder}
         value={value}

@@ -29,7 +29,7 @@ function Header() {
             </div>
           </div>
           <motion.div
-            className="bg-white shadow-lg ms-0 md:ms-2 mt-1 md:mt-0  md:translate-x-0"
+            className="bg-white shadow-lg ms-0 md:ms-2 mt-1 md:mt-0 md:translate-x-0 w-[50%]"
             initial={{ opacity: 0}}
             animate={{ opacity: showNavbar ? 1 : 0}}
             transition={{ duration: 0.2 }}

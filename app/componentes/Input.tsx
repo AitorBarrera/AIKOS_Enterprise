@@ -28,12 +28,12 @@ function Input({
           ${
             hasError
               ? "border-white focus:ring-gray-500"
-              : "border-p_ruby-hover focus:ring-s_yellow"
+              : "border-p_ruby-hover dark:border-0 focus:ring-s_yellow dark:focus:ring-gray-800"
           }
           ${
             isDisabled
-              ? "bg-gray-800 placeholder-gray-600"
-              : "bg-p_ruby-disable placeholder-grey "
+              ? "bg-gray-800 placeholder-gray-600 border-0"
+              : "bg-p_ruby-disable placeholder-grey dark:bg-grey dark:placeholder-gray-700"
           } 
           `}
         type={type}

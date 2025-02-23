@@ -11,16 +11,16 @@ function CardServicio({ titulo, descripcion, servicios }: CardServicioProps) {
   const [showCard, setShowCard] = useState(false);
 
   return (
-    <div className="flex flex-col w-full">
+    <div className="flex flex-col w-full cursor-pointer"
+          onClick={() => setShowCard(!showCard)}>
       <div
         className={`text-white w-full py-6 lg:px-12 px-4 flex justify-between items-center transition-all duration-300 ease-in-out
-            ${showCard ? "bg-p_ruby-hover" : "bg-p_ruby"}
+            ${showCard ? "bg-yellow-600" : "bg-yellow-300"}
             `}
       >
         <h2 className="text-2xl font-bold lg:text-5xl">{titulo}</h2>
         <div
-          className="w-12 text-white cursor-pointer"
-          onClick={() => setShowCard(!showCard)}
+          className="w-12 text-white "
         >
           <img
             src="iconos/plusb-solid.svg"
@@ -36,7 +36,7 @@ function CardServicio({ titulo, descripcion, servicios }: CardServicioProps) {
         initial={{ height: 0, opacity: 0 }}
         animate={{ height: showCard ? "auto" : 0, opacity: showCard ? 1 : 0 }}
         transition={{ duration: 0.5, ease: "easeInOut" }}
-        className="w-full px-4 overflow-hidden shadow-lg md:px-12 bg-p_ruby-hover"
+        className="w-full px-4 overflow-hidden shadow-lg md:px-12 bg-yellow-600"
       >
         <div className="flex flex-col w-full gap-4 py-8 text-white md:grid md:grid-cols-4 ">
           <p className="flex flex-col justify-center col-span-2">
