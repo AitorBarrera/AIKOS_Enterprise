@@ -10,7 +10,7 @@ function Header() {
 
   return (
       <nav className="flex w-full align-top justify-betwee">
-        <div className="relative flex flex-col self-center justify-start w-full md:flex-row">
+        <div className="relative z-10 flex flex-col self-center justify-start w-full md:flex-row">
           <div className="flex">
             <div className="hidden md:block">
               <NavLink to={"/"} className={({ isActive, isPending }) =>
@@ -23,17 +23,17 @@ function Header() {
             <div
               className="md:ms-2"
               onMouseEnter={() => setShowNavbar(true)}
-              onMouseLeave={() => setShowNavbar(false)}
+              // onMouseLeave={() => setShowNavbar(false)}
             >
               <Boton key={2} variant="blanco" imagen="iconos/bars-solid.svg" />
             </div>
           </div>
           <motion.div
             className="bg-white shadow-lg ms-0 md:ms-2 mt-1 md:mt-0 md:translate-x-0 w-[50%] md:w-auto "
-            initial={{ opacity: 0}}
-            animate={{ opacity: showNavbar ? 1 : 0}}
+            initial={{ opacity: 0, x: -20000}}
+            animate={{ opacity: showNavbar ? 1 : 0, x:0}}
             transition={{ duration: 0.2 }}
-            onMouseEnter={() => setShowNavbar(true)}
+            // onMouseEnter={() => setShowNavbar(true)}
             onMouseLeave={() => setShowNavbar(false)}
           >
             <ul className="flex flex-col h-full text-black md:flex-row ">

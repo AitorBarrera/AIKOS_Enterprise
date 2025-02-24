@@ -14,11 +14,12 @@
     "@react-router/serve": "^7.1.5",
     "@vercel/react-router": "^1.0.2",
     "isbot": "^5.1.17",
+    "lucide": "^0.475.0",
+    "lucide-react": "^0.475.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router": "^7.1.5",
-    "lucide": "^0.475.0",
-    "lucide-react": "^0.475.0"
+    "swiper": "^11.2.4"
   },
   "devDependencies": {
     "@react-router/dev": "^7.1.5",

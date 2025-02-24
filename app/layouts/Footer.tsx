@@ -15,7 +15,7 @@ function Footer({footerVariant = "blanco"}: FooterProps) {
   };
 
   return (
-    <div className={`flex flex-col w-full gap-8 px-4 py-4 footer lg:grid lg:grid-cols-6 ${variants[footerVariant]}`}>
+    <div className={`flex flex-col w-full gap-8 px-24 py-4 footer lg:grid lg:grid-cols-6 ${variants[footerVariant]}`}>
       <div className="flex items-center justify-center col-span-1 lg:justify-start">
         <Logo variant={footerVariant == "blanco" ? "negro" : "transparente"} width="3rem" />
         <div>
@@ -26,7 +26,7 @@ function Footer({footerVariant = "blanco"}: FooterProps) {
         <p className="w-[80%] lg:w-[80%] flex flex-col lg:flex-row justify-evenly items-center text-center text-sm lg:text-lg font-semibold gap-4">
           <a
             href=""
-            className={`relative after:absolute after:left-1/2 after:bottom-[-2px] after:w-0 after:h-[2px] after:bg-blanco dark:after:bg-negro after:transition-all 
+            className={`relative after:absolute after:left-1/2 after:bottom-[-2px] after:w-0 after:h-[2px] after:bg-white dark:after:bg-black after:transition-all 
             after:duration-300 after:translate-x-[-50%] hover:after:w-full`}
           >
             Condiciones de uso
@@ -34,7 +34,7 @@ function Footer({footerVariant = "blanco"}: FooterProps) {
           <span className="hidden lg:block">|</span>
           <a
             href=""
-            className={`relative after:absolute after:left-1/2 after:bottom-[-2px] after:w-0 after:h-[2px] after:bg-blanco dark:after:bg-negro after:transition-all 
+            className={`relative after:absolute after:left-1/2 after:bottom-[-2px] after:w-0 after:h-[2px] after:bg-white dark:after:bg-black after:transition-all 
             after:duration-300 after:translate-x-[-50%] hover:after:w-full`}
           >
             Cookies
@@ -42,7 +42,7 @@ function Footer({footerVariant = "blanco"}: FooterProps) {
           <span className="hidden lg:block">|</span>
           <a
             href=""
-            className={`relative after:absolute after:left-1/2 after:bottom-[-2px] after:w-0 after:h-[2px]  after:bg-blanco dark:after:bg-negro after:transition-all 
+            className={`relative after:absolute after:left-1/2 after:bottom-[-2px] after:w-0 after:h-[2px]  after:bg-white dark:after:bg-black after:transition-all 
             after:duration-300 after:translate-x-[-50%] hover:after:w-full`}
           >
             Aviso de privacidad

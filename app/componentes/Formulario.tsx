@@ -5,17 +5,15 @@ import Textarea from "./Textarea";
 
 function Formulario() {
   return (
-    <form className="w-full h-auto p-8 text-white border-2 border-white rounded-2xl dark:border-grey">
-      <h3 className="mb-6 text-4xl">Tu información</h3>
-      <div className="flex flex-col items-center gap-8">
+    <form className="self-center w-full p-8 text-white border-2 border-white rounded-2xl dark:border-grey">
+      <h3 className="mb-6 font-bold text-h3 leading-h3">Tu información</h3>
+      <div className="flex flex-col items-center justify-between gap-8">
         <InputDateTime />
         <Input type="text" placeholder="Nombre *" />
-        <Input type="text" placeholder="Apellidos *" isDisabled={true} />
+        <Input type="text" placeholder="Apellidos *"/>
         <Input
           type="text"
           placeholder="Direccion *"
-          hasError={true}
-          errorMessage="Error: Necesita al menos 10 caracteres."
         />
         <Textarea rows={8} placeholder="¿En qué podemos ayudar?" />
         <Boton text="Enviar" variant="blanco2" ancho="40%" />
