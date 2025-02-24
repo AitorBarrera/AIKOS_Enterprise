@@ -19,11 +19,11 @@ function DisplayComponente({
     <div className="w-[80%] mx-auto my-8">
       <div className="flex">
         <div className="container mx-auto">
-          <h2 className="mt-16 mb-8 text-4xl font-bold text-center">
+          <h2 className="mt-16 mb-8 text-4xl font-bold text-center text-blanco">
             {nombre}
           </h2>
           <div
-            className={`border-2 bg-transparent rounded-lg shadow-lg w-[100%] p-4 md:p-16 flex flex-${flexDireccion} gap-${gap} flex-wrap lg:flex-nowrap`}
+            className={`border-2 border-blanco bg-transparent rounded-lg shadow-lg w-[100%] p-4 md:p-16 flex flex-${flexDireccion} gap-${gap} flex-wrap lg:flex-nowrap`}
           >
             {componentes.map((componente, index) => (
               <div key={index} className="flex justify-center w-full">

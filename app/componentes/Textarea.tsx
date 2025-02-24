@@ -41,6 +41,7 @@ function Textarea({
           onChange(event.target.value);
         }}
         disabled={isDisabled}
+        name={placeholder}
       />
       {hasError && <p className="text-xs text-white">{errorMessage}</p>}
     </div>

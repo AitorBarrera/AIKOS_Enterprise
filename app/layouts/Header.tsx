@@ -9,8 +9,8 @@ function Header() {
   const [showNavbar, setShowNavbar] = useState(false);
 
   return (
-      <nav className="w-full flex justify-betwee align-top">
-        <div className="w-full flex flex-col md:flex-row justify-start self-center relative">
+      <nav className="flex w-full align-top justify-betwee">
+        <div className="relative flex flex-col self-center justify-start w-full md:flex-row">
           <div className="flex">
             <div className="hidden md:block">
               <NavLink to={"/"} className={({ isActive, isPending }) =>
@@ -29,7 +29,7 @@ function Header() {
             </div>
           </div>
           <motion.div
-            className="bg-white shadow-lg ms-0 md:ms-2 mt-1 md:mt-0 md:translate-x-0 w-[50%]"
+            className="bg-white shadow-lg ms-0 md:ms-2 mt-1 md:mt-0 md:translate-x-0 w-[50%] md:w-auto "
             initial={{ opacity: 0}}
             animate={{ opacity: showNavbar ? 1 : 0}}
             transition={{ duration: 0.2 }}
@@ -40,7 +40,7 @@ function Header() {
                 <NavLink to={"/"} className={ ({ isActive, isPending }) =>
                   isPending ? "bg-amber-400" : isActive ? "bg-black text-white pointer-events-none" : ""
                 }>
-                  <li className="flex md:hidden items-center h-full px-6 py-2 text-center border-b-2 border-black md:border-b-0 md:border-e-2 hover:bg-grey md:py-0">
+                  <li className="flex items-center h-full px-6 py-2 text-center border-b-2 border-black md:hidden md:border-b-0 md:border-e-2 hover:bg-grey md:py-0">
                     Home
                   </li>
                 </NavLink>

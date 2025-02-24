@@ -7,7 +7,7 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className="p-2 bg-p_ruby   dark:bg-black text-white dark:text-white rounded-lg flex items-center gap-2 border-3 border-white"
+      className="flex items-center gap-2 p-2 text-white border-white rounded-lg cursor-pointer bg-p_ruby dark:bg-black dark:text-white border-3"
     >
       {theme === "light" ? (
         <>

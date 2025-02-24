@@ -5,8 +5,8 @@ import Footer from './Footer'
 
 function HeaderAndFooter() {
   return (
-    <div className='relative bg-p_ruby dark:bg-negro'>
-      <header className='fixed top-26 px-8 md:px-26 w-full'>
+    <div className='relative transition duration-300 bg-p_ruby dark:bg-negro'>
+      <header className='fixed w-full px-8 top-26 md:px-26'>
         <Header/>
       </header>
 
@@ -14,7 +14,7 @@ function HeaderAndFooter() {
         <Outlet/>
       </main>
 
-      <footer className=' w-full'>
+      <footer className='w-full '>
         <Footer/>
       </footer>
     </div>

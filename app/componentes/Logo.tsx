@@ -1,5 +1,6 @@
-import { useEffect } from "react";
-import type { variantLogo } from "~/types/types";
+import { useEffect, useState } from "react";
+import { getTheme, useDarkMode } from "~/hooks/useDarkMode";
+import type { Theme, variantLogo } from "~/types/types";
 
 interface LogoProps {
   variant?: variantLogo;
@@ -12,18 +13,7 @@ function Logo({ variant = "negro", width = "20%" }: LogoProps) {
     negro: "iconos/iakoslogobl.svg",
     transparente: "iconos/iakoslogob.svg",
   };
-
-  // useEffect(() => {
-  //   const theme = localStorage.getItem("theme");
-  //   if (theme === "dark") {
-  //     logoVariant = variants.negro;
-  //   } else {
-  //     logoVariant = variants.ruby;
-  //   }
-  // }, []);
   
-  // let logoVariant = (localStorage.getItem("theme") == "dark" ? "iconos/iakoslogobl.svg" : "iconos/iakoslogob.svg");
-
   return (
     <img
       src={variants[variant]}

@@ -37,6 +37,7 @@ function Input({
           } 
           `}
         type={type}
+        name={placeholder}
         placeholder={placeholder}
         value={value}
         onChange={(event) => {

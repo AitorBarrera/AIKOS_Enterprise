@@ -24,7 +24,7 @@ export function meta({}: Route.MetaArgs) {
 export default function Home() {
   return (
     <>
-      <h2 className="pt-16 text-5xl font-extrabold text-center">COMPONENTES</h2>
+      <h2 className="pt-16 text-5xl font-extrabold text-center text-white">COMPONENTES</h2>
       <DisplayComponente
         key={1}
         nombre="Logo"
@@ -128,7 +128,7 @@ export default function Home() {
       />
 
       <DisplayComponente
-        key={11}
+        key={12}
         nombre="Toggle Theme"
         componentes={[
           <ThemeToggle />

@@ -2,6 +2,11 @@ import { useState, useEffect } from "react";
 
 type Theme = "light" | "dark" | "system";
 
+export function getTheme() {
+  if (typeof window === "undefined") return "system"; // Evita errores en SSR
+    return (localStorage.getItem("theme") as Theme) || "system";
+}
+
 export function useDarkMode() {
   // 🔹 1️⃣ Estado inicial desde localStorage o "system"
   const [theme, setTheme] = useState<Theme>(() => {
