@@ -1,5 +1,4 @@
-import { useDarkMode } from "../hooks/useDarkMode";
-import { Sun, Moon, Monitor } from "lucide-react"; // Importamos los iconos
+import { useDarkMode } from "../hooks/useDarkMode";// Importamos los iconos
 
 export default function ThemeToggle() {
   const { theme, toggleTheme } = useDarkMode();
@@ -11,15 +10,15 @@ export default function ThemeToggle() {
     >
       {theme === "light" ? (
         <>
-          <Sun className="w-8 h-8" />
+          <img src="iconos\iconoBoton\sun-solid.svg" className="w-8 h-8" />
         </>
       ) : theme === "dark" ? (
         <>
-          <Moon className="w-8 h-8" />
+          <img src="iconos\iconoBoton\moon-solid.svg" className="w-8 h-8" />
         </>
       ) : (
         <>
-          <Monitor className="w-8 h-8" />
+          <img src="iconos\iconoBoton\desktop-solid.svg" className="w-8 h-8" />
         </>
       )}
     </button>
