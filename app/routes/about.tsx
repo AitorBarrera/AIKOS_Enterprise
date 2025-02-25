@@ -68,7 +68,7 @@ function about() {
           <h3 className="font-bold text-h3 leading-h3">nos encargan el trabajo</h3>
           <div className="grid grid-cols-2 gap-12">
             <img src="aboutUsImg\phone.gif" alt="" className="w-full h-full col-span-2 md:col-span-1"/>
-            <img src="aboutUsImg\keyboard.gif" alt="" className="hidden w-full h-full col-span-1 md:block"/>
+            <img src="aboutUsImg\keyboard.gif" alt="" className="hidden w-full h-full col-span-1 md:block scale-x-[-1]"/>
           </div>
         </div>
         <div className="mt-6 gifRow">
@@ -82,7 +82,7 @@ function about() {
           <h3 className="font-bold text-h3 leading-h3">working</h3>
           <div className="grid grid-cols-2 gap-12">
             <img src="aboutUsImg\anxious.gif" alt="" className="w-full h-full col-span-2 md:col-span-1"/>
-            <img src="aboutUsImg\anoyed.gif" alt="" className="hidden w-full h-full col-span-1 md:block"/>
+            <img src="aboutUsImg\anoyed.gif" alt="" className="hidden w-full h-full col-span-1 md:block scale-x-[-1]"/>
           </div>
         </div>
         <div className="mt-6 gifRow">
