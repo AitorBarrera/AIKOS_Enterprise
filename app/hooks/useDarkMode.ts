@@ -49,6 +49,8 @@ export function useDarkMode() {
 
   // 🔹 4️⃣ Cambia entre "light" → "dark" → "system"
   const toggleTheme = () => {
+    console.log(theme);
+    
     setTheme((prev) =>
       prev === "light" ? "dark" : prev === "dark" ? "system" : "light"
     );

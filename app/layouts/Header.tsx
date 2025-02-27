@@ -4,8 +4,14 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Link, NavLink } from "react-router";
 import ThemeToggle from "~/componentes/ThemeToggle";
+import type { Theme } from "~/types/types";
 
-function Header() {
+interface HeaderProps{
+  theme: Theme,
+  darkModeFunction: ()=>void;
+}
+
+function Header( {theme, darkModeFunction}: HeaderProps) {
   const [showNavbar, setShowNavbar] = useState(false);
 
   return (
@@ -73,7 +79,7 @@ function Header() {
         </div>
 
         <div className="">
-          <ThemeToggle />
+          <ThemeToggle  theme={theme} darkModeFunction={darkModeFunction}/>
         </div>
       </nav>
   );

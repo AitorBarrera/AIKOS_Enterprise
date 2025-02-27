@@ -4,8 +4,15 @@ import ThemeToggle from "~/componentes/ThemeToggle";
 import { Form } from "react-router";
 import Formulario from "~/componentes/Formulario";
 import CardContacto from "~/componentes/CardContacto";
+import type { Theme } from "~/types/types";
+import { useDarkMode } from "~/hooks/useDarkMode";
 
-function contact() {
+interface ContactProps{
+}
+
+function contact({}: ContactProps) {
+  const { theme } = useDarkMode();
+
   return (
     <>
       <h1 className="my-12 font-extrabold text-center text-h1 leading-h1">

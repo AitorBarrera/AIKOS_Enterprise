@@ -5,19 +5,20 @@ import type { Theme, variantLogo } from "~/types/types";
 interface LogoProps {
   variant?: variantLogo;
   width?: string;
+  theme: Theme;
 }
 
-function Logo({ variant = "negro", width = "20%" }: LogoProps) {
-  const variants: Record<variantLogo, string> = {
-    ruby: "iconos/iakoslogob.svg",
-    negro: "iconos/iakoslogobl.svg",
-    transparente: "iconos/iakoslogob.svg",
+function Logo({ variant = "negro", width = "20%", theme ="light" }: LogoProps) {
+  const variants: Record<Theme, string> = {
+    light: "iconos/iakoslogob.svg",
+    dark: "iconos/iakoslogobl.svg",
+    system: "iconos/iakoslogobl.svg",
   };
   
   return (
     <img
-      src={variants[variant]}
-      alt="logo"
+      src={variants[theme]}
+      alt={theme}
       className="h-auto max-w-full"
       style={{ width }}
     />

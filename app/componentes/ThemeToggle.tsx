@@ -1,11 +1,15 @@
+import type { Theme } from "~/types/types";
 import { useDarkMode } from "../hooks/useDarkMode";// Importamos los iconos
 
-export default function ThemeToggle() {
-  const { theme, toggleTheme } = useDarkMode();
+interface ThemeToggleProps{
+  theme: Theme,
+  darkModeFunction: ()=>void;
+}
+export default function ThemeToggle({theme, darkModeFunction}: ThemeToggleProps) {
 
   return (
     <button
-      onClick={toggleTheme}
+      onClick={darkModeFunction}
       className="flex items-center gap-2 p-2 text-white border-white rounded-lg cursor-pointer bg-plight_ruby dark:bg-black dark:text-white border-3"
     >
       {theme === "light" ? (
