@@ -1,43 +1,19 @@
-.swiper {
-  width: 100%;
-  height: 100%;
+.bgImage{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size:cover
 }
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  /* Center slide text vertically */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.tcgImage{
+  background-image: url("projectsImg/project_pokemon_tcg_explorer.png");
 }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.retroPokedexImage{
+  background-image: url("projectsImg/project_retro_pokedex.png");
+  background-position: 20% ;
 }
 
-.swiper {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.mosaic-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 10px;
-  height: 100vh;
-}
-
-.mosaic-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #ccc;
-  border: 1px solid #000;
+.borderedText{
+  text-shadow: 3px 0 #000000, -3px 0 #000000, 0 3px #000000, 0 -3px #000000, 1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000;
 }

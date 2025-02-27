@@ -4,7 +4,7 @@ import type { cardContactoVariant, Theme } from "~/types/types";
 interface CardContactoProps {
   icono: string;
   texto: string;
-  theme: Theme;
+  theme?: Theme;
 }
 
 function CardContacto({ icono, texto, theme}: CardContactoProps) {

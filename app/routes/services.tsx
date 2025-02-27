@@ -27,7 +27,7 @@ const serviciosList = [
 
 function services() {
   return (
-    <>
+    <div className="w-[90%] mx-auto min-h-screen pt-48 pb-24 ">
       <h1 className="my-12 font-extrabold text-center text-h1 leading-h1">
         services
       </h1>
@@ -59,7 +59,7 @@ function services() {
           // <CardServicio titulo="Servicio 3" descripcion="Descripcion del servicio 2" servicios={["1", "2", "3"]}/>
         }
       />
-    </>
+    </div>
   );
 }
 

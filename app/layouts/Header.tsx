@@ -15,7 +15,7 @@ function Header( {theme, darkModeFunction}: HeaderProps) {
   const [showNavbar, setShowNavbar] = useState(false);
 
   return (
-      <nav className="flex w-full align-top justify-betwee">
+      <nav className="flex justify-between w-full align-top">
         <div className="relative z-10 flex flex-col self-center justify-start w-full md:flex-row">
           <div className="flex">
             <div className="hidden md:block">

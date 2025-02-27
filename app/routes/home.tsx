@@ -24,8 +24,8 @@ export function meta({}: Route.MetaArgs) {
 
 export default function Home() {
   return (
-    <div className="h-100">
-      {/* <Carrousel/> */}
+    <div className="h-screen">
+      <Carrousel/>
     </div>
   );
 }

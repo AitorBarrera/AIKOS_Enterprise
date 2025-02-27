@@ -3,7 +3,7 @@ import ContenedorCardServicios from "~/componentes/contenedorCardServicios/Conte
 
 function about() {
   return (
-    <>
+    <div className="w-[90%] mx-auto min-h-screen pt-48 pb-24 ">
     <h1 className="my-12 font-extrabold text-center text-h1 leading-h1">
       about us
     </h1>
@@ -100,7 +100,7 @@ function about() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

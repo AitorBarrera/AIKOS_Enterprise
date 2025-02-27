@@ -14,7 +14,7 @@ function contact({}: ContactProps) {
   const { theme } = useDarkMode();
 
   return (
-    <>
+    <div className="w-[90%] mx-auto min-h-screen pt-48 pb-24 ">
       <h1 className="my-12 font-extrabold text-center text-h1 leading-h1">
         contact
       </h1>
@@ -76,7 +76,7 @@ function contact({}: ContactProps) {
           </p>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

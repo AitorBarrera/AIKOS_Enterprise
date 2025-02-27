@@ -17,7 +17,7 @@ function Footer({footerVariant = "blanco", theme, darkModeFunction}: FooterProps
   };
 
   return (
-    <div className={`flex flex-col w-full gap-8 px-24 py-4 footer lg:grid lg:grid-cols-6 ${variants[footerVariant]}`}>
+    <div className={`bottom-0 flex flex-col w-full gap-8 px-24 py-4 footer lg:grid lg:grid-cols-6 ${variants[footerVariant]}`}>
       <div className="flex items-center justify-center col-span-1 lg:justify-start">
         <Logo variant={footerVariant == "blanco" ? "negro" : "transparente"} width="3rem" theme={theme}/>
         <div>
