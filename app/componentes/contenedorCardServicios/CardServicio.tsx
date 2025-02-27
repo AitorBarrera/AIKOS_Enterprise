@@ -14,8 +14,8 @@ function CardServicio({ titulo, descripcion, servicios }: CardServicioProps) {
     <div className="flex flex-col w-full cursor-pointer"
           onClick={() => setShowCard(!showCard)}>
       <div
-        className={`text-plight_rubyhover dark:text-pdark_smokehover w-full py-6 lg:px-12 px-4 flex justify-between items-center transition-all duration-300 ease-in-out
-            ${showCard ? " bg-plight_rubyhover dark:text-black dark:bg-grey text-white" : "bg-white "}
+        className={`text-plight_rubyhover dark:text-black w-full py-6 lg:px-12 px-4 flex justify-between items-center transition-all duration-300 ease-in-out
+            ${showCard ? " bg-plight_rubyhover  dark:bg-grey text-white" : "bg-white "}
             `}
       >
         <h2 className="text-2xl font-extrabold lg:text-5xl">{titulo}</h2>
