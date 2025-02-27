@@ -2,10 +2,11 @@ import React from 'react'
 import Header from './Header'
 import { Outlet } from 'react-router'
 import Footer from './Footer'
-import { useDarkMode } from '~/hooks/useDarkMode';
+import { useTheme } from '~/hooks/ThemeContext';
+import type { Theme } from '~/hooks/ThemeContext';
 
 function HeaderAndFooter() {
-  const { theme, toggleTheme } = useDarkMode();
+  const { theme, toggleTheme } = useTheme();
   
   return (
     <div className='relative transition duration-300 bg-linear-to-b from-pdark_smoke_gradiant dark:from-pdark_smoke via-plight_ruby dark:via-pdark_smoke to-pdark_smoke_gradiant dark:to-pdark_smoke'>
@@ -13,7 +14,7 @@ function HeaderAndFooter() {
         <Header theme={theme} darkModeFunction={toggleTheme}/>
       </header>
 
-      <div className='h-screen'>
+      <div className='min-h-screen'>
         <main className='z-1 min-h-[90%]'>
           <Outlet/>
         </main>

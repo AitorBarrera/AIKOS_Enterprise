@@ -4,14 +4,14 @@ import ThemeToggle from "~/componentes/ThemeToggle";
 import { Form } from "react-router";
 import Formulario from "~/componentes/Formulario";
 import CardContacto from "~/componentes/CardContacto";
-import type { Theme } from "~/types/types";
-import { useDarkMode } from "~/hooks/useDarkMode";
+import type { Theme } from "~/hooks/ThemeContext";
+import { useTheme } from "~/hooks/ThemeContext";
 
 interface ContactProps{
 }
 
 function contact({}: ContactProps) {
-  const { theme } = useDarkMode();
+  const { theme } = useTheme();
 
   return (
     <div className="w-[90%] mx-auto min-h-screen pt-48 pb-24 ">
@@ -38,12 +38,14 @@ function contact({}: ContactProps) {
           </p>
           <div className="grid grid-cols-1 gap-12 my-12 cardContactoSection xl:grid-cols-2">
             <CardContacto
-              icono={"iconos/Contacto/phone-volume-solid2.svg"}
+              icono={"iconos/Contacto/phone-volume-solid"}
               texto="+34 612 345 678"
+              theme={theme}
             />
             <CardContacto
-              icono={"iconos/Contacto/correo2.svg"}
+              icono={"iconos/Contacto/correo"}
               texto="correo@correo.es"
+              theme={theme}
             />
           </div>
         </div>
